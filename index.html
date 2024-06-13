@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/908d5f2062.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Sumit</span><br> Hada from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------about------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey there! I'm Sumit Hada, a web developer who loves crafting websites using modern technologies
+                        and tools. Another thing that gives me dopamine is problem-solving – it's like tackling a
+                        captivating puzzle!
+                        <br>
+                        My portfolio showcases the fruits of my creativity. Let's connect and transform your ideas into
+                        dynamic online experiences!
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Languages</span><br>C/C++, Javascript</li>
+                            <li><span>Web Technologies</span><br>HTML, CSS, ReactJs, TailwindCSS, Nodejs, jQuery, Bootstrap</li>
+                            <li><span>Development Tools</span><br>VScode, Git, Github</li>
+                            <li><span>Soft skills</span><br>Problem Solving, Self-learning, Presentation, Adaptability
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jun-Aug 2023</span><br>Student intern at Admission Cell JECRC College (In-Office)</li>
+                            <li><span>May-Jul 2022</span><br>Latex Reviewer Intern at No Help Too Big (Remote)</li>
+                            <li><span>Apr-May 2022</span><br>SME intern at Qwings India (Remote)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br>Graduation</li>
+                            <li><span>2014</span><br>12th standard</li>
+                            <li><span>2019</span><br>10th standard</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------services---------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Efficient in HTML, CSS, and JavaScript, capable of delivering visually appealing and highly
+                        interactive
+                        interfaces tailored to client needs.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I like crafting seamless, responsive web applications with good proficiency in modern front-end
+                        technologies like React, TailwindCSS, Bootstrap, ensuring an exceptional user experience.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+                <div>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <h2>Latex Author</h2>
+                    <p> I specialize in crafting professional LaTeX documents, from reports and theses to academic
+                        papers, with
+                        meticulous attention to detail.</p>
+                    <!-- <a href="#">Learn More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------portfolio-------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <div class="img-container"><img src="images/work-1.png"></div>
+                    <div class="layer">
+                        <h3>The Fitness Club</h3>
+                        <p>A gym website having an elegant UI/UX made using HTML, CSS and ReactJs.</p>
+                        <a href="https://fit-club-gym-website.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="img-container"> <img src="images/work-2.png"></div>
+                    <div class="layer">
+                        <h3>E-Commerce Website</h3>
+                        <p>React-based e-commerce website utilizing React Hooks for efficient state management, with a
+                            clean
+                            and responsive design crafted using React, HTML, and vanilla CSS.</p>
+                        <a href="https://ecom-website-sumit.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <div class="img-container"> <img src="images/work-3.png"></div>
+                    <div class="layer">
+                        <h3>Online Food Delivery App</h3>
+                        <p>Built with HTML, CSS, and JavaScript for seamless device compatibility and an intuitive
+                            interface</p>
+                        <a href="https://sumithada.github.io/My-OmniFood/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="gridDiv" class="work-list2 hidden">
+                <div class="work">
+                    <div class="img-container"> <img src="images/work-4.png"></div>
+                    <div class="layer">
+                        <h3>Online Food Delivery App</h3>
+                        <p>A robust user interface for seamless user experience built using HTML, ReactJs framework and
+                            TailwindCSS </p>
+                        <a href="https://react-project-by-sumit.netlify.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="btn" id="toggleButton">See More</div>
+        </div>
+    </div>
+
+    <!-- ------------------contact--------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>hadasumit18@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7014860670</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/sumit-hada-239060217/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/hadasumit18" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class=""><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/cv-sumit.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &#169;. Made with <i class="fa-solid fa-heart"></i> by Sumit Hada.</p>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4h900CLgtLSz_mgIl2aWvZ1CIIWZFXZbc-ka77yez3LP2PgYEb1Uv-zZAgX4he7_P/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function () {
+            const gridDiv = document.getElementById('gridDiv');
+            const divSee = document.getElementById('toggleButton');
+            if (gridDiv.classList.contains('hidden')) {
+                gridDiv.classList.remove('hidden');
+                gridDiv.classList.add('grid-container');
+                divSee.textContent = 'See Less'
+            } else {
+                gridDiv.classList.remove('grid-container');
+                gridDiv.classList.add('hidden');
+                divSee.textContent = 'See More';
+            }
+        });
+    </script>
+</body>
+
+</html>
